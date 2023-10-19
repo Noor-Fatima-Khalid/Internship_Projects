@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.container{
+    height: auto;
+    width: 100%;
+    background: rgb(159,142,52);
+    background: linear-gradient(90deg, rgba(159,142,52,1) 0%, rgba(224,203,134,1) 50%, rgba(240,231,195,1) 100%);
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 0.5fr 1fr 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+#nav-bar{
+    padding-top: 10px;
+    /* position: fixed; */
+    box-shadow: 0px 2px 2px rgba(230, 206, 127, 0.575);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+.logo p{
+    padding-left: 80px;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(248, 238, 142);
+}
+nav{
+    margin-top: 8px;
+    padding-left: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro-box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 8%;
+    justify-content: center;
+}
+#about-me{
+    width: 75%;
+    margin-left: 12%;
+    display: grid;
+    grid-template-rows: 0.15fr 0.4fr 0.1fr;
+    justify-content: center;
+    align-items: start;
+}
+#about-me h1{
+    text-align: start;
+}
+#about-me p, .contact-box p{
+    text-align: start;
+    padding-top: 25px;
+    font-size: 1.2rem;
+}
+#about-me #buttons{
+    margin: 5%;
+    height: 45px;
+    display: flex;
+    flex-direction: columns;
+    gap: 20px;
+}
+#about-me button{ 
+    width: 30%;
+    height: 70%;
+    background-color: rgba(117, 100, 23, 0.774);
+    box-shadow: 3px 3px 3px rgb(94, 75, 26);
+    font-size: 1rem;
+}
+
+#image img{
+    width: 400px;
+    height: 400px;
+    border-radius: 560px;
+}
+
+.skills-box{
+    padding-top: 2%;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.1fr 1.5fr;
+    grid-gap: 20px;
+}
+.skills-box #images{
+    width: 14%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    justify-self: center;
+}
+.skills-box #images img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.skills-box p{
+    margin-left: 20%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.skills-box #proficiency{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+.skills-box #proficiency .bar{
+    margin-left: 6%;
+    margin-bottom: 4%;
+    width: 80%;
+    height: 20px;
+    background-color: rgb(231, 213, 213);
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.skills-box #proficiency .bar #html{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(124, 110, 46, 0.699);
+    border-radius: 8px;
+}
+.skills-box #proficiency .bar #css{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(124, 110, 46, 0.699);
+    border-radius: 8px;
+}
+.skills-box #proficiency .bar #js{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(124, 110, 46, 0.699);
+    border-radius: 8px;
+}
+.skills-box #proficiency .bar #c{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(124, 110, 46, 0.699);
+    border-radius: 8px;
+}
+
+.projects-box{
+    padding: 4%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.projects-box .main-box{
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+.projects-box h3{
+    margin-top: 3%;
+    font-size: 1.4rem;
+}
+.projects-box .main-box #landing-page, #calculator{
+    border: 1px solid rgba(129, 106, 30, 0.678);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(2, 22, 2);
+    padding: 2%;
+}
+.projects-box .main-box button{ 
+    margin-left: 40%;
+    margin-top: 4%;
+    width: 20%;
+    height: auto;
+    background-color: rgba(117, 100, 23, 0.774);
+    box-shadow: 2px 2px 4px rgba(63, 60, 14, 0.788);
+    color: white;
+    font-size: 1rem;
+}
+
+.achievement-box{
+    padding: 4%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.achievement-box .main-box{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.achievement-box .main-box #box{
+    width: 85%;
+    border: 1px solid rgba(129, 106, 30, 0.678);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(2, 22, 2);
+    padding: 2% 2% 2% 2%;
+}
+h3{
+    text-align: center;
+}
+.achievement-box .main-box #box img, p{
+    margin-top: 3%;
+}
+#box img{
+    border-radius: 15px;
+}
+.achievement-box .main-box #box button{ 
+    margin-left: 40%;
+    margin-top: 4%;
+    width: 20%;
+    height: auto;
+    background-color: rgba(117, 100, 23, 0.774);
+    box-shadow: 2px 2px 4px rgba(63, 60, 14, 0.788);
+    color: white;
+    font-size: 1rem;
+}
+.contact-box{
+    margin-top: 5%;
+    margin-left: 9%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.contact-box .socials-box{
+    width: 40%;
+    height: 100px;
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.contact-box .socials-box button{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+} 
+.contact-box .socials-box img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+}
+.contact-box #image img{
+    width: 60%;
+    height: 50%;
+}
+
+footer{
+    height: 270px;
+    padding-top: 10px;
+    color: beige;
+    background: rgb(75, 68, 27);    
+    text-align: center;
+    font-size: 1.2rem;
+}
