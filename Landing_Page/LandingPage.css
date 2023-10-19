@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2, h3{
+    color: rgba(1, 1, 71, 0.767); 
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 98.7vw;
+    height: 100vh;
+    background: rgb(1,28,62);
+    background: linear-gradient(90deg, rgba(1,28,62,1) 0%, rgba(54,54,115,1) 35%, rgba(96,139,145,1) 100%);
+    display: grid;
+    grid-template-rows: 0.5fr 5fr;
+}
+
+
+.nav-bar{
+    margin-top: 8px;
+    height: 70px;
+    padding-right: 2%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(198, 198, 238, 0.808);
+}
+#logo img{  
+    margin-left: 20px;
+    margin-top: 6px;
+    height: 60px;
+    border-radius: 50px;
+}
+#nav-links{
+    padding-left: 3%;
+    padding-top: 20px;
+    padding-right: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#nav-links a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(27, 27, 112, 0.767);
+    text-decoration: none;
+} 
+
+.main-box{
+    padding: 20px;
+    padding-right: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.graphics_side{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#image{
+    margin-left: 20%;
+}
+#image img{
+    height: 450px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+#socials-box img{
+    height: 40px;
+    border-radius: 50px;
+}
+
+.offers-side{
+    display: grid;
+    grid-template-rows: 0.3fr 1.2fr 1.5fr 1fr;
+}
+.offers-side h2, p{
+    color: rgb(1, 11, 78);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.promotion-offer h2{
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+.promotion-offer p{
+    margin-left: 10%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+.buttons-box{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    height: 50px;
+}
+#download-button{
+    margin-top: 18px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    justify-content: center;
+    box-shadow: 4px 4px 5px rgb(122, 110, 1);
+}
+#download-button p{
+    margin-top: 8px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(136, 136, 0);
+}
+#download-button img{
+    margin-top: 3px;
+    margin-left: 18%;
+    border-radius: 50px;
+    height: 30px;
+}
+#download-button:hover {
+    background-color: #719ddf93;
+}
+#download-button:active {
+    background-color: #719ddf93;
+    box-shadow: 0 3px silver;
+    transform: translateY(2px);
+}
+#app-store-buttons button{
+    border-radius: 8px;
+    height: 55px;
+    box-shadow: #697a04e7;
+}
+#app-store-buttons button img{
+    height: 52px;
+    border-radius: 6px;
+}
+#app-store-buttons button:active {
+    transform: translateY(2px);
+}
+
