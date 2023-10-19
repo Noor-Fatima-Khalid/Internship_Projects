@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 41);
+    padding-left: 8%;
+    display: flex;
+    align-items: center;
+}
+summary, h1, p{
+    color: blanchedalmond;
+}
+a{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+}
